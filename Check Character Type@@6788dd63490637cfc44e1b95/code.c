@@ -7,7 +7,7 @@ int main() {
     scanf("%c",&ch);
     if((ch>='a' && ch<='z')||(ch>='A' && ch<='Z')){
         if(strchr(vowels,ch)!=NULL){
-            printf("Vowels");
+            printf("Vowel");
         }
         else{
             printf("Consonant");
