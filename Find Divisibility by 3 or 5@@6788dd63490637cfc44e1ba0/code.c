@@ -1,18 +1,19 @@
 #include <stdio.h>
+
 int main() {
-    int a,b;
-    scanf("%d %d",&a,&b);
-    if(a==b){
-        printf("Equal");
+    int a;
+    scanf("%d",&a);
+    if(a%3==0 && a%5==0){
+        printf("Divisible by Both");
     }
-    else if(a>b){
-        printf("First");
+    else if (a%3==0){
+        printf("Divisible by 3");
     }
-    else if(a<b){
-        printf("Second");
+    else if(a%5==0){
+        printf("Divisible by 5");
     }
     else{
-        printf("Invalid");
+        printf("Not Divisible");
     }
     return 0;
 }
